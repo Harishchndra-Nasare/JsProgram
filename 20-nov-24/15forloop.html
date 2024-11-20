@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter the number"));
+        let reminder, reverse = 0;
+        let orginalnum = num;
+
+        for (; num > 0;) {
+            reminder = num % 10;
+            reverse = reverse * 10 + reminder;
+            num = parseInt( num / 10);
+        }
+        if (reverse == orginalnum) {
+            document.write("Number is palindrome");
+        } else {
+            document.write("Number is not palindrome");
+        }
+    </script>
+</body>
+</html>

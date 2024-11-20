@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        //wap enter the number and chekck is armstrong number or not mens we need to multiply each nimber 3 times and add the some of each number and original and sum is equal is armstrong number
+
+        let num = parseInt(prompt("Enter the number"));
+        let originalnum = num;
+        let reminder,reverse=0;
+
+        for (; num > 0;) {
+            reminder = num % 10;
+            reverse += reminder * reminder * reminder;
+            num = parseInt( num / 10);
+        }
+        if (reverse === originalnum) {
+            document.write("Armstrong number");
+        } else {
+            document.write("Not armstrong Number");
+        }
+
+    </script>
+</body>
+</html>

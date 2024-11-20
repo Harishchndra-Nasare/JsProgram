@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+  //Enter the n digit number and perform opertion on each digite to print even and odd numbers
+
+        let a = parseInt(prompt("Enter the n digit number"));
+        let reminder;
+        let even = 0, odd = 0;
+        
+        for (; a > 0;) {
+            reminder = a % 10;
+
+            if (a % 2 == 0) {
+                even += reminder;
+
+            } else  {
+                odd += reminder;
+            }
+            a = parseInt(a / 10);
+        }
+        document.write("The sum of even number :", + even);
+        document.write("The sum of odd number :", + odd);
+    </script>
+</body>
+</html>

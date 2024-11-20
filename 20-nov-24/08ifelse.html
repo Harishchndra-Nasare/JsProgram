@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let ramAge = parseInt(prompt("Enter the age of Ram"));
+        let shyamAge = parseInt(prompt("Enter the age of Shyam"));
+        let ajayage = parseInt(prompt("Enter the age of Ajay"));
+
+        if (ajayage < shyamAge && ajayage < ramAge) {
+            document.write("Ajay is youngest");
+        }
+        else if (shyamAge < ajayage && shyamAge < ramAge) {
+            document.write("Shyam is youngest");
+        } else {
+            document.write("Ram is youngest");
+        }
+    </script>
+</body>
+</html>
